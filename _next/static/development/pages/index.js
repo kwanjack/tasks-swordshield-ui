@@ -1,9 +1,9 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/index.js"],{
 
-/***/ "./components/Header.js":
-/*!******************************!*\
-  !*** ./components/Header.js ***!
-  \******************************/
+/***/ "./components/FooterButtons.js":
+/*!*************************************!*\
+  !*** ./components/FooterButtons.js ***!
+  \*************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -19,7 +19,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @fortawesome/free-solid-svg-icons */ "./node_modules/@fortawesome/free-solid-svg-icons/index.es.js");
 /* harmony import */ var _mock_api_models__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../mock_api/models */ "./mock_api/models.js");
 /* harmony import */ var reactjs_popup__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! reactjs-popup */ "./node_modules/reactjs-popup/reactjs-popup.es.js");
-var _jsxFileName = "/Users/jackkwan/Projects/priorities/components/Header.js";
+var _jsxFileName = "/Users/jackkwan/Projects/priorities/components/FooterButtons.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -29,29 +29,26 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
-var linkStyle = {
-  marginRight: 15
-};
 
-var headerStyle = __jsx("style", {
+var footerButtonStyle = __jsx("style", {
   jsx: "true",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 17
+    lineNumber: 12
   },
   __self: undefined
-}, "\n  .header {\n    flex-direction: column;\n    height: 150px;\n    width: 200px;\n    padding: 0px;\n    margin: 0px;\n    z-index: 10;\n    position: absolute;\n    bottom:0;\n    right:0;\n    align-content: flex-end;\n    justify-content: flex-end;\n    display: flex;\n    align-items: flex-end;\n  }\n\n  .modal {\n    display: flex;\n    flex-direction: row;\n  }\n  \n  .popup-content {\n    border: 0px;\n  }\n\n\n");
+}, "\n  .footer-buttons {\n    flex-direction: column;\n    height: 150px;\n    width: 200px;\n    padding: 0px;\n    margin: 0px;\n    z-index: 10;\n    position: absolute;\n    bottom:0;\n    right:0;\n    align-content: flex-end;\n    justify-content: flex-end;\n    display: flex;\n    align-items: flex-end;\n  }\n\n  .modal {\n    display: flex;\n    flex-direction: row;\n  }\n  \n  .popup-content { border: 0px; }\n");
 
 var buttonStyle = __jsx("style", {
   jsx: "true",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 46
+    lineNumber: 37
   },
   __self: undefined
-}, "\n  .button {\n    border-radius: 100px;\n    margin: 10px;\n    width: 180px;\n    flex-direction: row;\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    padding: 0px;\n    margin-right: 40px;\n    font-weight: 700;\n    font-size: 17px;\n    border-width: 0px;\n    box-shadow: 5px 5px black;\n    outline:none; \n  }\n\n  .button:active {\n    position:relative;\n    top:1px;\n    left:1px;\n    box-shadow: 2px 2px black;\n  }\n\n  .button-left {\n    background: red;\n    padding: 15px;\n    width: 40px;\n    border-radius: 100px 0px 0px 100px;\n  }\n\n  .button-name {\n    flex: 1;\n  }\n\n  .spacer {\n    height: 60px;\n  }\n\n  .add-input {\n    height: 90px;\n    width: 80%;\n    font-size: 50px;\n    text-indent: 10px;\n  }\n  .add-input:focus {\n    outline: none;\n  }\n\n  .add-submit-task {\n    width: 20%;\n    height: 96px;\n    margin: 0px;\n    padding: 0px;\n    font-size:50px;\n    background: #6ee93c;\n    border: none;\n  }\n\n  .add-submit-priority {\n    width: 20%;\n    height: 96px;\n    margin: 0px;\n    padding: 0px;\n    font-size:50px;\n    background: #50c4e8;\n    border: none;\n  }\n");
+}, "\n  .button {\n    border-radius: 100px;\n    margin: 10px;\n    width: 180px;\n    flex-direction: row;\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    padding: 0px;\n    margin-right: 40px;\n    font-weight: 700;\n    font-size: 17px;\n    border-width: 0px;\n    box-shadow: 5px 5px black;\n    outline:none; \n  }\n\n  .button:active {\n    position:relative;\n    top:1px;\n    left:1px;\n    box-shadow: 2px 2px black;\n  }\n\n  .button-left {\n    background: red;\n    padding: 15px;\n    width: 40px;\n    border-radius: 100px 0px 0px 100px;\n  }\n\n  .button-name { flex: 1; }\n  .spacer { height: 60px; }\n\n  .add-input {\n    height: 90px;\n    width: 80%;\n    font-size: 50px;\n    text-indent: 10px;\n  }\n  .add-input:focus { outline: none; }\n\n  .add-submit-task {\n    width: 20%;\n    height: 96px;\n    margin: 0px;\n    padding: 0px;\n    font-size:50px;\n    background: #6ee93c;\n    border: none;\n  }\n\n  .add-submit-priority {\n    width: 20%;\n    height: 96px;\n    margin: 0px;\n    padding: 0px;\n    font-size:50px;\n    background: #50c4e8;\n    border: none;\n  }\n");
 
-var Header = function Header(props) {
+var FooterButtons = function FooterButtons(props) {
   var router = Object(next_router__WEBPACK_IMPORTED_MODULE_1__["useRouter"])();
 
   var popupButton = function popupButton(label, color, icon) {
@@ -60,7 +57,7 @@ var Header = function Header(props) {
       key: 'blah',
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 120
+        lineNumber: 104
       },
       __self: this
     }, __jsx("div", {
@@ -70,21 +67,21 @@ var Header = function Header(props) {
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 121
+        lineNumber: 105
       },
       __self: this
     }, " ", __jsx(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_3__["FontAwesomeIcon"], {
       icon: icon,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 121
+        lineNumber: 105
       },
       __self: this
     }), " "), __jsx("div", {
       className: "button-name",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 122
+        lineNumber: 106
       },
       __self: this
     }, " ", label, " "), buttonStyle);
@@ -112,10 +109,10 @@ var Header = function Header(props) {
   };
 
   return __jsx("div", {
-    className: "header",
+    className: "footer-buttons",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 135
+      lineNumber: 119
     },
     __self: this
   }, __jsx(reactjs_popup__WEBPACK_IMPORTED_MODULE_6__["default"], {
@@ -128,7 +125,7 @@ var Header = function Header(props) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 136
+      lineNumber: 120
     },
     __self: this
   }, function (close) {
@@ -136,7 +133,7 @@ var Header = function Header(props) {
       className: "modal",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 138
+        lineNumber: 122
       },
       __self: this
     }, __jsx("input", {
@@ -152,7 +149,7 @@ var Header = function Header(props) {
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 139
+        lineNumber: 123
       },
       __self: this
     }), __jsx("button", {
@@ -162,14 +159,14 @@ var Header = function Header(props) {
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 140
+        lineNumber: 124
       },
       __self: this
     }, " ", __jsx(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_3__["FontAwesomeIcon"], {
       icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_4__["faPencilAlt"],
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 140
+        lineNumber: 124
       },
       __self: this
     }), " "));
@@ -183,7 +180,7 @@ var Header = function Header(props) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 145
+      lineNumber: 129
     },
     __self: this
   }, function (close) {
@@ -191,7 +188,7 @@ var Header = function Header(props) {
       className: "modal",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 147
+        lineNumber: 131
       },
       __self: this
     }, __jsx("input", {
@@ -207,7 +204,7 @@ var Header = function Header(props) {
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 148
+        lineNumber: 132
       },
       __self: this
     }), __jsx("button", {
@@ -217,14 +214,14 @@ var Header = function Header(props) {
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 149
+        lineNumber: 133
       },
       __self: this
     }, " ", __jsx(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_3__["FontAwesomeIcon"], {
       icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_4__["faExclamation"],
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 149
+        lineNumber: 133
       },
       __self: this
     }), " "));
@@ -232,20 +229,20 @@ var Header = function Header(props) {
     className: "spacer",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 153
+      lineNumber: 137
     },
     __self: this
-  }), headerStyle);
+  }), footerButtonStyle);
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Header);
+/* harmony default export */ __webpack_exports__["default"] = (FooterButtons);
 
 /***/ }),
 
-/***/ "./components/MyLayout.js":
-/*!********************************!*\
-  !*** ./components/MyLayout.js ***!
-  \********************************/
+/***/ "./components/Layout.js":
+/*!******************************!*\
+  !*** ./components/Layout.js ***!
+  \******************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -256,9 +253,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(styled_jsx_style__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Header */ "./components/Header.js");
+/* harmony import */ var _FooterButtons__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./FooterButtons */ "./components/FooterButtons.js");
 
-var _jsxFileName = "/Users/jackkwan/Projects/priorities/components/MyLayout.js";
+var _jsxFileName = "/Users/jackkwan/Projects/priorities/components/Layout.js";
 
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
@@ -294,7 +291,7 @@ var gradientStyle = __jsx("style", {
 var containerStyle = __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_1___default.a, {
   id: "3554644128",
   __self: undefined
-}, ".container{padding:0px;margin:0px;}body{padding:0px;margin:0px;font:11px Arial;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9qYWNra3dhbi9Qcm9qZWN0cy9wcmlvcml0aWVzL2NvbXBvbmVudHMvTXlMYXlvdXQuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBbUMwQyxBQUdpQixBQUlBLFlBSEQsQUFJQSxXQUhiLEFBSWtCLGdCQUNsQiIsImZpbGUiOiIvVXNlcnMvamFja2t3YW4vUHJvamVjdHMvcHJpb3JpdGllcy9jb21wb25lbnRzL015TGF5b3V0LmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IEhlYWRlciBmcm9tICcuL0hlYWRlcic7XG5cbmNvbnN0IGxheW91dFN0eWxlID0gPHN0eWxlIGpzeD1cInRydWVcIj57YFxuICAubGF5b3V0IHtcbiAgICBtYXJnaW46IDBweDtcbiAgICBwYWRkaW5nOiAwcHg7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XG4gIH1cbmB9PC9zdHlsZT5cblxuY29uc3QgdHJhcGV6b2lkU3R5bGUgPSA8c3R5bGUganN4PVwidHJ1ZVwiPntgXG4gIC50cmFwZXpvaWQge1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDA7XG4gICAgbGVmdDogMDtcbiAgICB3aWR0aDogMTAwJTtcbiAgICBoZWlnaHQ6IDEwMCU7XG4gICAgei1pbmRleDogLTE7XG4gIH1cbmB9PC9zdHlsZT5cblxuY29uc3QgZ3JhZGllbnRTdHlsZSA9IDxzdHlsZSBqc3g9XCJ0cnVlXCI+e2BcbiAgLmJhY2tncm91bmQge1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB6LWluZGV4OiAtMjtcbiAgICB0b3A6IDA7XG4gICAgbGVmdDogMDtcbiAgICB3aWR0aDogMTAwdnc7XG4gICAgaGVpZ2h0OiAxMDB2aDtcbiAgICBiYWNrZ3JvdW5kOiByZ2IoMTUzLDIwNCwyMTQpO1xuICAgIGJhY2tncm91bmQ6IGxpbmVhci1ncmFkaWVudCgwZGVnLCByZ2JhKDE1MywyMDQsMjE0LDEpIDclLCByZ2JhKDIzLDI0NywyNDEsMC43NDgzMzY4MzQ3MzM4OTM2KSA1MSUsIHJnYmEoMjgsMTY5LDE4NywxKSA4OSUpO1xuICB9XG5gfTwvc3R5bGU+XG5cbmNvbnN0IGNvbnRhaW5lclN0eWxlID0gPHN0eWxlIGpzeCBnbG9iYWw+e2BcbiAgLmNvbnRhaW5lciB7XG4gICAgcGFkZGluZzogMHB4O1xuICAgIG1hcmdpbjogMHB4O1xuICB9XG4gIGJvZHkge1xuICAgIHBhZGRpbmc6IDBweDtcbiAgICBtYXJnaW46IDBweDtcbiAgICBmb250OiAxMXB4IEFyaWFsO1xuICB9XG5gfTwvc3R5bGU+XG5cbmNvbnN0IExheW91dCA9IHByb3BzID0+IChcbiAgPGRpdiBjbGFzc05hbWU9XCJjb250YWluZXJcIj5cbiAgICB7IGNvbnRhaW5lclN0eWxlIH1cbiAgICB7Z3JhZGllbnRTdHlsZX1cbiAgICA8ZGl2IGNsYXNzTmFtZT1cImxheW91dFwiPlxuICAgICAgPGRpdiBjbGFzc05hbWU9XCJjb250ZW50XCI+IHtwcm9wcy5jaGlsZHJlbn0gPC9kaXY+XG4gICAgICB7bGF5b3V0U3R5bGV9XG4gICAgPC9kaXY+XG5cbiAgICA8SGVhZGVyIHsuLi5wcm9wc30gLz5cbiAgICA8ZGl2IGNsYXNzTmFtZT1cImJhY2tncm91bmRcIj48L2Rpdj5cbiAgICA8c3ZnIGNsYXNzTmFtZT1cInRyYXBlem9pZFwiIGlkPVwidHJhcGV6b2lkXCIgaGVpZ2h0PVwiMTAwJVwiIHdpZHRoPVwiMTAwJVwiIHZpZXdCb3g9XCIwIDAgMTAwIDEwMFwiIHByZXNlcnZlQXNwZWN0UmF0aW89XCJub25lXCI+XG4gICAgICA8cGF0aCB3aWR0aD1cIjEwMCVcIiBoZWlnaHQ9XCIxMDAlXCIgZD1cIk0xMDAsMFxuICAgICAgICAgICAgICBMMTAwLDEwMFxuICAgICAgICAgICAgICBMMTAsMTAwXG4gICAgICAgICAgICAgIEw2MCwwelwiIGZpbGw9XCIjZThmNjJhXCI+PC9wYXRoPlxuICAgICAge3RyYXBlem9pZFN0eWxlfVxuICAgIDwvc3ZnPlxuICBcbiAgPC9kaXY+XG4gIFxuKTtcblxuZXhwb3J0IGRlZmF1bHQgTGF5b3V0OyJdfQ== */\n/*@ sourceURL=/Users/jackkwan/Projects/priorities/components/MyLayout.js */");
+}, ".container{padding:0px;margin:0px;}body{padding:0px;margin:0px;font:11px Arial;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9qYWNra3dhbi9Qcm9qZWN0cy9wcmlvcml0aWVzL2NvbXBvbmVudHMvTGF5b3V0LmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQW1DMEMsQUFHaUIsQUFJQSxZQUhELEFBSUEsV0FIYixBQUlrQixnQkFDbEIiLCJmaWxlIjoiL1VzZXJzL2phY2trd2FuL1Byb2plY3RzL3ByaW9yaXRpZXMvY29tcG9uZW50cy9MYXlvdXQuanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgRm9vdGVyQnV0dG9ucyBmcm9tICcuL0Zvb3RlckJ1dHRvbnMnO1xuXG5jb25zdCBsYXlvdXRTdHlsZSA9IDxzdHlsZSBqc3g9XCJ0cnVlXCI+e2BcbiAgLmxheW91dCB7XG4gICAgbWFyZ2luOiAwcHg7XG4gICAgcGFkZGluZzogMHB4O1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xuICB9XG5gfTwvc3R5bGU+XG5cbmNvbnN0IHRyYXBlem9pZFN0eWxlID0gPHN0eWxlIGpzeD1cInRydWVcIj57YFxuICAudHJhcGV6b2lkIHtcbiAgICBwb3NpdGlvbjogZml4ZWQ7XG4gICAgdG9wOiAwO1xuICAgIGxlZnQ6IDA7XG4gICAgd2lkdGg6IDEwMCU7XG4gICAgaGVpZ2h0OiAxMDAlO1xuICAgIHotaW5kZXg6IC0xO1xuICB9XG5gfTwvc3R5bGU+XG5cbmNvbnN0IGdyYWRpZW50U3R5bGUgPSA8c3R5bGUganN4PVwidHJ1ZVwiPntgXG4gIC5iYWNrZ3JvdW5kIHtcbiAgICBwb3NpdGlvbjogZml4ZWQ7XG4gICAgei1pbmRleDogLTI7XG4gICAgdG9wOiAwO1xuICAgIGxlZnQ6IDA7XG4gICAgd2lkdGg6IDEwMHZ3O1xuICAgIGhlaWdodDogMTAwdmg7XG4gICAgYmFja2dyb3VuZDogcmdiKDE1MywyMDQsMjE0KTtcbiAgICBiYWNrZ3JvdW5kOiBsaW5lYXItZ3JhZGllbnQoMGRlZywgcmdiYSgxNTMsMjA0LDIxNCwxKSA3JSwgcmdiYSgyMywyNDcsMjQxLDAuNzQ4MzM2ODM0NzMzODkzNikgNTElLCByZ2JhKDI4LDE2OSwxODcsMSkgODklKTtcbiAgfVxuYH08L3N0eWxlPlxuXG5jb25zdCBjb250YWluZXJTdHlsZSA9IDxzdHlsZSBqc3ggZ2xvYmFsPntgXG4gIC5jb250YWluZXIge1xuICAgIHBhZGRpbmc6IDBweDtcbiAgICBtYXJnaW46IDBweDtcbiAgfVxuICBib2R5IHtcbiAgICBwYWRkaW5nOiAwcHg7XG4gICAgbWFyZ2luOiAwcHg7XG4gICAgZm9udDogMTFweCBBcmlhbDtcbiAgfVxuYH08L3N0eWxlPlxuXG5jb25zdCBMYXlvdXQgPSBwcm9wcyA9PiAoXG4gIDxkaXYgY2xhc3NOYW1lPVwiY29udGFpbmVyXCI+XG4gICAgeyBjb250YWluZXJTdHlsZSB9XG4gICAge2dyYWRpZW50U3R5bGV9XG4gICAgPGRpdiBjbGFzc05hbWU9XCJsYXlvdXRcIj5cbiAgICAgIDxkaXYgY2xhc3NOYW1lPVwiY29udGVudFwiPiB7cHJvcHMuY2hpbGRyZW59IDwvZGl2PlxuICAgICAge2xheW91dFN0eWxlfVxuICAgIDwvZGl2PlxuXG4gICAgPEZvb3RlckJ1dHRvbnMgey4uLnByb3BzfSAvPlxuICAgIDxkaXYgY2xhc3NOYW1lPVwiYmFja2dyb3VuZFwiPjwvZGl2PlxuICAgIDxzdmcgY2xhc3NOYW1lPVwidHJhcGV6b2lkXCIgaWQ9XCJ0cmFwZXpvaWRcIiBoZWlnaHQ9XCIxMDAlXCIgd2lkdGg9XCIxMDAlXCIgdmlld0JveD1cIjAgMCAxMDAgMTAwXCIgcHJlc2VydmVBc3BlY3RSYXRpbz1cIm5vbmVcIj5cbiAgICAgIDxwYXRoIHdpZHRoPVwiMTAwJVwiIGhlaWdodD1cIjEwMCVcIiBkPVwiTTEwMCwwXG4gICAgICAgICAgICAgIEwxMDAsMTAwXG4gICAgICAgICAgICAgIEwxMCwxMDBcbiAgICAgICAgICAgICAgTDYwLDB6XCIgZmlsbD1cIiNlOGY2MmFcIj4gPC9wYXRoPlxuICAgICAge3RyYXBlem9pZFN0eWxlfVxuICAgIDwvc3ZnPlxuICA8L2Rpdj5cbik7XG5cbmV4cG9ydCBkZWZhdWx0IExheW91dDsiXX0= */\n/*@ sourceURL=/Users/jackkwan/Projects/priorities/components/Layout.js */");
 
 var Layout = function Layout(props) {
   return __jsx("div", {
@@ -318,7 +315,7 @@ var Layout = function Layout(props) {
       lineNumber: 53
     },
     __self: this
-  }, " ", props.children, " "), layoutStyle), __jsx(_Header__WEBPACK_IMPORTED_MODULE_3__["default"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, props, {
+  }, " ", props.children, " "), layoutStyle), __jsx(_FooterButtons__WEBPACK_IMPORTED_MODULE_3__["default"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, props, {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 57
@@ -353,10 +350,374 @@ var Layout = function Layout(props) {
       lineNumber: 60
     },
     __self: this
-  }), trapezoidStyle));
+  }, " "), trapezoidStyle));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Layout);
+
+/***/ }),
+
+/***/ "./components/PrioritySelect.js":
+/*!**************************************!*\
+  !*** ./components/PrioritySelect.js ***!
+  \**************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_corejs2_core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/define-property */ "./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _babel_runtime_corejs2_core_js_object_define_properties__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/define-properties */ "./node_modules/@babel/runtime-corejs2/core-js/object/define-properties.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_object_define_properties__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_object_define_properties__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _babel_runtime_corejs2_core_js_object_get_own_property_descriptors__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/get-own-property-descriptors */ "./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-descriptors.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_object_get_own_property_descriptors__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_object_get_own_property_descriptors__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _babel_runtime_corejs2_core_js_object_get_own_property_descriptor__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/get-own-property-descriptor */ "./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-descriptor.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_object_get_own_property_descriptor__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_object_get_own_property_descriptor__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _babel_runtime_corejs2_core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/get-own-property-symbols */ "./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-symbols.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/keys */ "./node_modules/@babel/runtime-corejs2/core-js/object/keys.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var react_select__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-select */ "./node_modules/react-select/dist/react-select.browser.esm.js");
+/* harmony import */ var _fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @fortawesome/react-fontawesome */ "./node_modules/@fortawesome/react-fontawesome/index.es.js");
+/* harmony import */ var _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @fortawesome/free-solid-svg-icons */ "./node_modules/@fortawesome/free-solid-svg-icons/index.es.js");
+/* harmony import */ var _mock_api_models__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../mock_api/models */ "./mock_api/models.js");
+
+
+
+
+
+
+
+var _jsxFileName = "/Users/jackkwan/Projects/priorities/components/PrioritySelect.js";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement;
+
+function ownKeys(object, enumerableOnly) { var keys = _babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_5___default()(object); if (_babel_runtime_corejs2_core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_4___default.a) { var symbols = _babel_runtime_corejs2_core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_4___default()(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return _babel_runtime_corejs2_core_js_object_get_own_property_descriptor__WEBPACK_IMPORTED_MODULE_3___default()(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(source, true).forEach(function (key) { Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(target, key, source[key]); }); } else if (_babel_runtime_corejs2_core_js_object_get_own_property_descriptors__WEBPACK_IMPORTED_MODULE_2___default.a) { _babel_runtime_corejs2_core_js_object_define_properties__WEBPACK_IMPORTED_MODULE_1___default()(target, _babel_runtime_corejs2_core_js_object_get_own_property_descriptors__WEBPACK_IMPORTED_MODULE_2___default()(source)); } else { ownKeys(source).forEach(function (key) { _babel_runtime_corejs2_core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0___default()(target, key, _babel_runtime_corejs2_core_js_object_get_own_property_descriptor__WEBPACK_IMPORTED_MODULE_3___default()(source, key)); }); } } return target; }
+
+
+
+
+ // react-select has its own preferred way for styling.
+
+var customStyles = {
+  control: function control(base, state) {
+    return _objectSpread({}, base, {
+      background: "#f0bb39",
+      border: state.isFocused ? 0 : 0,
+      // This line disable the blue border
+      boxShadow: state.isFocused ? 0 : 0,
+      '&:hover': {
+        border: state.isFocused ? 0 : 0
+      },
+      height: '54px',
+      'minHeight': '54px',
+      'borderRadius': '0px',
+      fontFamily: "Arial",
+      fontSize: '20px',
+      'fontWeight': 700,
+      flex: 1
+    });
+  },
+  singleValue: function singleValue(provided, state) {
+    return _objectSpread({}, provided, {
+      fontWeight: 900,
+      color: 'black'
+    });
+  }
+};
+
+var selectStyle = __jsx("style", {
+  jsx: "true",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 27
+  },
+  __self: undefined
+}, "\n.select-wrapper {\n  position: absolute;\n  display: flex;\n  flex-direction: row;\n  width: 100vw;\n  height: 100px;\n  right: 0;\n  top: 80px;\n  align-items: center;\n}\n\n.select { flex: 1 }\n\n.select-label {\n  display: flex;\n  height: 54px;\n  width: 100px;\n  padding: 0px;\n  margin: 0px;\n  background-color: #6d695f;\n  font-size: 20px;\n  font-weight: 700;\n  align-items: center;\n  justify-content: center;\n}\n\n.remove-priority:hover { color: red; }\n\n.option-container {\n  display: flex;\n  width: 100%;\n  justify-content: space-between;\n}\n\n.react-select__single-value .priority-option {\n  visibility: hidden;\n}\n");
+
+var PrioritySelect = function PrioritySelect(props) {
+  var priorities = props.priorities,
+      pickedPriorityId = props.pickedPriorityId,
+      setPickedPriorityId = props.setPickedPriorityId;
+  var options = priorities.map(function (priority) {
+    return {
+      value: priority.id,
+      label: priority.name
+    };
+  });
+  var picked = options.find(function (option) {
+    return option.value === pickedPriorityId;
+  }) || null;
+
+  var formatOptionLabel = function formatOptionLabel(_ref) {
+    var value = _ref.value,
+        label = _ref.label,
+        customAbbreviation = _ref.customAbbreviation;
+    return __jsx("div", {
+      className: "option-container",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 74
+      },
+      __self: this
+    }, __jsx("div", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 75
+      },
+      __self: this
+    }, label), __jsx("div", {
+      className: "priority-option",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 76
+      },
+      __self: this
+    }, customAbbreviation, __jsx("div", {
+      className: "remove-priority",
+      onClick: function onClick(e) {
+        e.stopPropagation();
+        var newPriorities = Object(_mock_api_models__WEBPACK_IMPORTED_MODULE_11__["removePriorityById"])(value);
+
+        if (newPriorities.length === 0) {
+          return setPickedPriorityId(null);
+        }
+
+        if (newPriorities.findIndex(function (p) {
+          return p.id === pickedPriorityId;
+        }) === -1) {
+          setPickedPriorityId(newPriorities[0].id);
+        }
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 78
+      },
+      __self: this
+    }, " ", __jsx(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_9__["FontAwesomeIcon"], {
+      icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_10__["faTrash"],
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 83
+      },
+      __self: this
+    }), " ")));
+  };
+
+  return __jsx("div", {
+    className: "select-wrapper",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 88
+    },
+    __self: this
+  }, __jsx("div", {
+    className: "select-label",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 89
+    },
+    __self: this
+  }, " Sort by: "), __jsx(react_select__WEBPACK_IMPORTED_MODULE_8__["default"], {
+    className: "select",
+    instanceId: "selectPriority",
+    classNamePrefix: "react-select",
+    value: picked,
+    onChange: function onChange(selected) {
+      return setPickedPriorityId(selected.value);
+    },
+    formatOptionLabel: formatOptionLabel,
+    options: options,
+    components: {
+      IndicatorSeparator: function IndicatorSeparator() {
+        return null;
+      }
+    },
+    styles: customStyles,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 90
+    },
+    __self: this
+  }), selectStyle);
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (PrioritySelect);
+
+/***/ }),
+
+/***/ "./components/TaskList.js":
+/*!********************************!*\
+  !*** ./components/TaskList.js ***!
+  \********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/extends */ "./node_modules/@babel/runtime-corejs2/helpers/esm/extends.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_movable__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-movable */ "./node_modules/react-movable/lib/index.js");
+/* harmony import */ var react_movable__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_movable__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _mock_api_models__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../mock_api/models */ "./mock_api/models.js");
+/* harmony import */ var _fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @fortawesome/react-fontawesome */ "./node_modules/@fortawesome/react-fontawesome/index.es.js");
+/* harmony import */ var _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @fortawesome/free-solid-svg-icons */ "./node_modules/@fortawesome/free-solid-svg-icons/index.es.js");
+
+var _jsxFileName = "/Users/jackkwan/Projects/priorities/components/TaskList.js";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
+
+
+
+
+
+var listStyle = __jsx("style", {
+  jsx: "true",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 7
+  },
+  __self: undefined
+}, "\n.draggable-list {\n  margin-top: 80px;\n  overflow: auto;\n  max-height: -webkit-calc(100vh - 180px);\n  -webkit-mask-image: -webkit-gradient(linear, left center, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));\n}\n\n.draggable-left {\n  background: lightgrey;\n  width: 30px;\n  padding: 0px;\n  margin: 0px;\n  height: 100%;\n}\n\n.list-item-content {\n  width: -webkit-calc(100% - 10px);\n  display: flex;\n  flex-direction: row;\n  height: 40px;\n  align-items: center;\n  font-weight: 700;\n}\n\nul { padding: 0px; }\n\nli:hover {\n  cursor: move; /* fallback if grab cursor is unsupported */\n  cursor: grab;\n}\n\nli {\n  display: flex;\n  margin: 10px 0px;\n  background-color: white;\n  list-style-type: none;\n  font-size: 20px;\n  height: 40px;\n  justify-content: space-between;\n  flex-direction: row;\n}\n\n.list-item-name {\n  text-align: left;\n  padding-left: 10px;\n  flex: 1;\n}\n\n.trash-button {\n  border: none;\n  margin: 0;\n  padding: 0;\n  width: auto;\n  overflow: visible;\n  cursor: pointer;\n  background: transparent;\n  font-size: 20px;\n  opacity: 0.5;\n  transition: color 0.5s, opacity 0.5s;\n}\n\n.trash-button:hover {\n  opacity: 1;\n  color: red;\n  transition: color 0.5s, opacity 0.5s;\n}\n\n");
+
+var sortTasksUsingPriority = function sortTasksUsingPriority(priorities, pickedPriorityId, tasks) {
+  if (!pickedPriorityId || priorities.length === 0) {
+    return [];
+  }
+
+  var result = [];
+  var priority = priorities.find(function (priority) {
+    return priority.id === pickedPriorityId;
+  });
+
+  if (!priority) {
+    return [];
+  }
+
+  var _loop = function _loop(i) {
+    var ranking = priority.ranking[i];
+    var task = tasks.find(function (task) {
+      return task.id === ranking;
+    });
+    result.push(task);
+  };
+
+  for (var i = 0; i < priority.ranking.length; i++) {
+    _loop(i);
+  }
+
+  ;
+  result = result.filter(function (item) {
+    return item !== undefined;
+  });
+  return result;
+};
+
+var TaskList = function TaskList(props) {
+  var tasks = props.tasks,
+      pickedPriorityId = props.pickedPriorityId,
+      _props$priorities = props.priorities,
+      priorities = _props$priorities === void 0 ? [] : _props$priorities;
+  var sortedTasks = sortTasksUsingPriority(priorities, pickedPriorityId, tasks);
+  var items = sortedTasks.map(function (st) {
+    return st.name;
+  });
+  return __jsx(react_movable__WEBPACK_IMPORTED_MODULE_2__["List"], {
+    values: items,
+    removableByMove: true,
+    onChange: function onChange(_ref) {
+      var oldIndex = _ref.oldIndex,
+          newIndex = _ref.newIndex,
+          targetRect = _ref.targetRect;
+
+      if (newIndex === -1) {
+        return Object(_mock_api_models__WEBPACK_IMPORTED_MODULE_3__["removeTaskById"])(sortedTasks[oldIndex].id);
+      }
+
+      Object(_mock_api_models__WEBPACK_IMPORTED_MODULE_3__["moveTaskToRank"])(sortedTasks[oldIndex].id, pickedPriorityId, newIndex);
+    },
+    renderList: function renderList(_ref2) {
+      var children = _ref2.children,
+          props = _ref2.props;
+      return __jsx("ul", Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+        className: "draggable-list"
+      }, props, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 107
+        },
+        __self: this
+      }), children, " ", listStyle);
+    },
+    renderItem: function renderItem(_ref3) {
+      var value = _ref3.value,
+          props = _ref3.props,
+          index = _ref3.index;
+      return __jsx("li", Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+        key: index,
+        className: "list-item"
+      }, props, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 108
+        },
+        __self: this
+      }), __jsx("div", {
+        className: "list-item-content",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 109
+        },
+        __self: this
+      }, __jsx("div", {
+        className: "draggable-left",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 110
+        },
+        __self: this
+      }), __jsx("div", {
+        className: "list-item-name",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 111
+        },
+        __self: this
+      }, " ", value, " "), __jsx("button", {
+        className: "trash-button",
+        onClick: function onClick() {
+          return Object(_mock_api_models__WEBPACK_IMPORTED_MODULE_3__["removeTaskById"])(sortedTasks[index].id);
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 112
+        },
+        __self: this
+      }, __jsx(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_4__["FontAwesomeIcon"], {
+        icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_5__["faTrash"],
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 113
+        },
+        __self: this
+      }))));
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 98
+    },
+    __self: this
+  });
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (TaskList);
 
 /***/ }),
 
@@ -386,19 +747,17 @@ function useTasks() {
 
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
     //on first render
-    console.log('Setting initial Tasks...');
+    console.log('Local Storage Empty. Setting initial Tasks...');
     var initialTasks = Object(_mock_api_models__WEBPACK_IMPORTED_MODULE_2__["getTasks"])();
     setTasks(initialTasks);
   }, []);
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
     //on every render
     var token = pubsub_js__WEBPACK_IMPORTED_MODULE_1___default.a.subscribe('tasks', function (msg, data) {
-      console.log('publish received!');
-      console.log('publish tasks:', msg, data);
-      setTasks(data);
+      return setTasks(data);
     });
     return function () {
-      pubsub_js__WEBPACK_IMPORTED_MODULE_1___default.a.unsubscribe(token);
+      return pubsub_js__WEBPACK_IMPORTED_MODULE_1___default.a.unsubscribe(token);
     };
   });
   return tasks;
@@ -410,17 +769,17 @@ function usePriorities() {
 
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
     //on first render
-    console.log('Setting initial Priorities...');
+    console.log('Local Storage Empty. Setting initial Priorities...');
     var initialPriorities = Object(_mock_api_models__WEBPACK_IMPORTED_MODULE_2__["getPriorities"])();
     setPriorities(initialPriorities);
   }, []);
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
     //on every render
     var token = pubsub_js__WEBPACK_IMPORTED_MODULE_1___default.a.subscribe('priorities', function (msg, data) {
-      setPriorities(data);
+      return setPriorities(data);
     });
     return function () {
-      pubsub_js__WEBPACK_IMPORTED_MODULE_1___default.a.unsubscribe(token);
+      return pubsub_js__WEBPACK_IMPORTED_MODULE_1___default.a.unsubscribe(token);
     };
   });
   return priorities;
@@ -608,7 +967,6 @@ function addTaskByName(taskName) {
     name: taskName
   };
   tasks.push(task);
-  console.log('adding task by name:', taskName);
   var priorities = getPriorities();
   var _iteratorNormalCompletion = true;
   var _didIteratorError = false;
@@ -643,9 +1001,6 @@ function addTaskByName(taskName) {
 function removeTaskById(taskId) {
   var tasks = getTasks();
   var priorities = getPriorities();
-  console.log('Removing taskId:', taskId, 'name:', tasks.find(function (task) {
-    return task.id === taskId;
-  }));
   var newTasks = tasks.filter(function (task) {
     return task.id !== taskId;
   });
@@ -30923,53 +31278,17 @@ module.exports = function(module) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Home; });
-/* harmony import */ var _babel_runtime_corejs2_core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/define-property */ "./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js");
-/* harmony import */ var _babel_runtime_corejs2_core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _babel_runtime_corejs2_core_js_object_define_properties__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/define-properties */ "./node_modules/@babel/runtime-corejs2/core-js/object/define-properties.js");
-/* harmony import */ var _babel_runtime_corejs2_core_js_object_define_properties__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_object_define_properties__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _babel_runtime_corejs2_core_js_object_get_own_property_descriptors__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/get-own-property-descriptors */ "./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-descriptors.js");
-/* harmony import */ var _babel_runtime_corejs2_core_js_object_get_own_property_descriptors__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_object_get_own_property_descriptors__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _babel_runtime_corejs2_core_js_object_get_own_property_descriptor__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/get-own-property-descriptor */ "./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-descriptor.js");
-/* harmony import */ var _babel_runtime_corejs2_core_js_object_get_own_property_descriptor__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_object_get_own_property_descriptor__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _babel_runtime_corejs2_core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/get-own-property-symbols */ "./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-symbols.js");
-/* harmony import */ var _babel_runtime_corejs2_core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/keys */ "./node_modules/@babel/runtime-corejs2/core-js/object/keys.js");
-/* harmony import */ var _babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/extends */ "./node_modules/@babel/runtime-corejs2/helpers/esm/extends.js");
-/* harmony import */ var _babel_runtime_corejs2_core_js_get_iterator__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/get-iterator */ "./node_modules/@babel/runtime-corejs2/core-js/get-iterator.js");
-/* harmony import */ var _babel_runtime_corejs2_core_js_get_iterator__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_get_iterator__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
-/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! styled-jsx/style */ "./node_modules/styled-jsx/style.js");
-/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(styled_jsx_style__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var _components_MyLayout__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../components/MyLayout */ "./components/MyLayout.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_12__);
-/* harmony import */ var _hooks_customHooks__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../hooks/customHooks */ "./hooks/customHooks.js");
-/* harmony import */ var _mock_api_models__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../mock_api/models */ "./mock_api/models.js");
-/* harmony import */ var react_movable__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! react-movable */ "./node_modules/react-movable/lib/index.js");
-/* harmony import */ var react_movable__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(react_movable__WEBPACK_IMPORTED_MODULE_15__);
-/* harmony import */ var _fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! @fortawesome/react-fontawesome */ "./node_modules/@fortawesome/react-fontawesome/index.es.js");
-/* harmony import */ var _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! @fortawesome/free-solid-svg-icons */ "./node_modules/@fortawesome/free-solid-svg-icons/index.es.js");
-/* harmony import */ var react_select__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! react-select */ "./node_modules/react-select/dist/react-select.browser.esm.js");
-
-
-
-
-
-
-
-
-
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _hooks_customHooks__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../hooks/customHooks */ "./hooks/customHooks.js");
+/* harmony import */ var _fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @fortawesome/react-fontawesome */ "./node_modules/@fortawesome/react-fontawesome/index.es.js");
+/* harmony import */ var _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @fortawesome/free-solid-svg-icons */ "./node_modules/@fortawesome/free-solid-svg-icons/index.es.js");
+/* harmony import */ var _components_PrioritySelect__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/PrioritySelect */ "./components/PrioritySelect.js");
+/* harmony import */ var _components_TaskList__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/TaskList */ "./components/TaskList.js");
+/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
 var _jsxFileName = "/Users/jackkwan/Projects/priorities/pages/index.js";
 
-
-var __jsx = react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement;
-
-function ownKeys(object, enumerableOnly) { var keys = _babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_5___default()(object); if (_babel_runtime_corejs2_core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_4___default.a) { var symbols = _babel_runtime_corejs2_core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_4___default()(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return _babel_runtime_corejs2_core_js_object_get_own_property_descriptor__WEBPACK_IMPORTED_MODULE_3___default()(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(source, true).forEach(function (key) { Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_8__["default"])(target, key, source[key]); }); } else if (_babel_runtime_corejs2_core_js_object_get_own_property_descriptors__WEBPACK_IMPORTED_MODULE_2___default.a) { _babel_runtime_corejs2_core_js_object_define_properties__WEBPACK_IMPORTED_MODULE_1___default()(target, _babel_runtime_corejs2_core_js_object_get_own_property_descriptors__WEBPACK_IMPORTED_MODULE_2___default()(source)); } else { ownKeys(source).forEach(function (key) { _babel_runtime_corejs2_core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0___default()(target, key, _babel_runtime_corejs2_core_js_object_get_own_property_descriptor__WEBPACK_IMPORTED_MODULE_3___default()(source, key)); }); } } return target; }
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
@@ -30978,342 +31297,77 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 
 
 
-
+var homeStyle = __jsx("style", {
+  jsx: "true",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 11
+  },
+  __self: undefined
+}, "\nh1 { font-size: 40px; }\n.main-title { margin-bottom: 0; }\n.sub-title { margin-top: 0; font-size: 12px; }\n.main-content {\n  padding-left: 20px;\n  width: -webkit-calc(100vw - 50px);\n }\n");
 
 function Home() {
-  var tasks = Object(_hooks_customHooks__WEBPACK_IMPORTED_MODULE_13__["useTasks"])(); // existing hook
+  var tasks = Object(_hooks_customHooks__WEBPACK_IMPORTED_MODULE_1__["useTasks"])();
+  var priorities = Object(_hooks_customHooks__WEBPACK_IMPORTED_MODULE_1__["usePriorities"])() || [];
 
-  var priorities = Object(_hooks_customHooks__WEBPACK_IMPORTED_MODULE_13__["usePriorities"])() || [];
-
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_10__["useState"])('0'),
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])('0'),
       pickedPriorityId = _useState[0],
       setPickedPriorityId = _useState[1];
 
-  var selectStyle = __jsx("style", {
-    jsx: "true",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 22
-    },
-    __self: this
-  }, "\n    .select-wrapper {\n      position: absolute;\n      display: flex;\n      flex-direction: row;\n      width: 100vw;\n      height: 100px;\n      right: 0;\n      top: 80px;\n      align-items: center;\n    }\n\n    .select {\n      flex: 1\n    }\n\n    .select-label {\n      display: flex;\n      height: 54px;\n      width: 100px;\n      padding: 0px;\n      margin: 0px;\n      background-color: #6d695f;\n      font-size: 20px;\n      font-weight: 700;\n      align-items: center;\n      justify-content: center;\n    }\n\n    .remove-priority:hover {\n      color: red;\n    }\n\n    .option-container {\n      display: flex;\n      width: 100%;\n      justify-content: space-between;\n    }\n\n    .react-select__single-value .priority-option {\n      visibility: hidden;\n    }\n\n  ");
-
-  var customStyles = {
-    control: function control(base, state) {
-      return _objectSpread({}, base, {
-        background: "#f0bb39",
-        border: state.isFocused ? 0 : 0,
-        // This line disable the blue border
-        boxShadow: state.isFocused ? 0 : 0,
-        '&:hover': {
-          border: state.isFocused ? 0 : 0
-        },
-        height: '54px',
-        'minHeight': '54px',
-        'borderRadius': '0px',
-        fontFamily: "Arial",
-        fontSize: '20px',
-        'fontWeight': 700,
-        flex: 1
-      });
-    },
-    singleValue: function singleValue(provided, state) {
-      return _objectSpread({}, provided, {
-        fontWeight: 900,
-        color: 'black'
-      });
-    }
-  };
-
-  var formatOptionLabel = function formatOptionLabel(_ref) {
-    var value = _ref.value,
-        label = _ref.label,
-        customAbbreviation = _ref.customAbbreviation;
-    return __jsx("div", {
-      className: "option-container",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 90
-      },
-      __self: this
-    }, __jsx("div", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 91
-      },
-      __self: this
-    }, label), __jsx("div", {
-      className: "priority-option",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 92
-      },
-      __self: this
-    }, customAbbreviation, __jsx("div", {
-      className: "remove-priority",
-      onClick: function onClick(e) {
-        e.stopPropagation();
-        var newPriorities = Object(_mock_api_models__WEBPACK_IMPORTED_MODULE_14__["removePriorityById"])(value);
-
-        if (newPriorities.length === 0) {
-          return setPickedPriorityId(null);
-        }
-
-        if (newPriorities.findIndex(function (p) {
-          return p.id === pickedPriorityId;
-        }) === -1) {
-          setPickedPriorityId(newPriorities[0].id);
-        }
-      },
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 94
-      },
-      __self: this
-    }, " ", __jsx(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_16__["FontAwesomeIcon"], {
-      icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_17__["faTrash"],
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 99
-      },
-      __self: this
-    }), " ")));
-  };
-
-  var renderPriorityOptions = function renderPriorityOptions(priorities) {
-    var options = [];
-    var _iteratorNormalCompletion = true;
-    var _didIteratorError = false;
-    var _iteratorError = undefined;
-
-    try {
-      for (var _iterator = _babel_runtime_corejs2_core_js_get_iterator__WEBPACK_IMPORTED_MODULE_7___default()(priorities), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
-        var priority = _step.value;
-        options.push({
-          value: priority.id,
-          label: priority.name
-        });
-      }
-    } catch (err) {
-      _didIteratorError = true;
-      _iteratorError = err;
-    } finally {
-      try {
-        if (!_iteratorNormalCompletion && _iterator["return"] != null) {
-          _iterator["return"]();
-        }
-      } finally {
-        if (_didIteratorError) {
-          throw _iteratorError;
-        }
-      }
-    }
-
-    var picked = options.find(function (option) {
-      return option.value === pickedPriorityId;
-    }) || null;
-    return __jsx("div", {
-      className: "select-wrapper",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 108
-      },
-      __self: this
-    }, __jsx("div", {
-      className: "select-label",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 109
-      },
-      __self: this
-    }, " Sort by: "), __jsx(react_select__WEBPACK_IMPORTED_MODULE_18__["default"], {
-      className: "select",
-      instanceId: "selectPriority",
-      classNamePrefix: "react-select",
-      value: picked,
-      onChange: function onChange(selected) {
-        return setPickedPriorityId(selected.value);
-      },
-      formatOptionLabel: formatOptionLabel,
-      options: options,
-      components: {
-        IndicatorSeparator: function IndicatorSeparator() {
-          return null;
-        }
-      },
-      styles: customStyles,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 110
-      },
-      __self: this
-    }), selectStyle);
-  };
-
-  var sortTasksUsingPriority = function sortTasksUsingPriority(pickedPriorityId, tasks) {
-    if (!pickedPriorityId) {
-      return [];
-    }
-
-    if (priorities.length === 0) {
-      return [];
-    }
-
-    var result = [];
-    var priority = priorities.find(function (priority) {
-      return priority.id === pickedPriorityId;
-    });
-
-    if (!priority) {
-      return [];
-    }
-
-    var _loop = function _loop(i) {
-      var ranking = priority.ranking[i];
-      var task = tasks.find(function (task) {
-        return task.id === ranking;
-      });
-      result.push(task);
-    };
-
-    for (var i = 0; i < priority.ranking.length; i++) {
-      _loop(i);
-    }
-
-    ;
-    result = result.filter(function (item) {
-      return item !== undefined;
-    });
-    return result;
-  };
-
-  var sortedTasks = sortTasksUsingPriority(pickedPriorityId, tasks);
-
-  var triggerMovement = function triggerMovement() {
-    var lastTask = sortedTasks[tasks.length - 1];
-    Object(_mock_api_models__WEBPACK_IMPORTED_MODULE_14__["moveTaskToRank"])(lastTask.id, pickedPriorityId, 1);
-  };
-
-  var listStyle = __jsx("style", {
-    jsx: "true",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 147
-    },
-    __self: this
-  }, "\n    .draggable-list {\n      margin-top: 80px;\n      overflow: auto;\n      max-height: -webkit-calc(100vh - 180px);\n      -webkit-mask-image: -webkit-gradient(linear, left center, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));\n    }\n\n    .draggable-left {\n      background: lightgrey;\n      width: 30px;\n      padding: 0px;\n      margin: 0px;\n      height: 100%;\n    }\n\n    .list-item-content {\n      display: flex;\n      flex-direction: row;\n      height: 40px;\n      align-items: center;\n      font-weight: 700;\n    }\n\n    ul {\n      padding: 0px;\n    }\n\n    li:hover {\n      cursor: move; /* fallback if grab cursor is unsupported */\n      cursor: grab;\n    }\n\n    li {\n      display: flex;\n      margin: 10px 0px;\n      background-color: white;\n      list-style-type: none;\n      font-size: 20px;\n      height: 40px;\n      min-width: 100%;\n      max-width: 90vw;\n      align-items: center;\n      justify-content: space-between;\n      flex-direction: row;\n    }\n\n    .list-item-name {\n      text-align: left;\n      padding-left: 10px;\n      flex: 1;\n    }\n  ");
-
-  var renderTestList = function renderTestList(tasks) {
-    var items = sortTasksUsingPriority(pickedPriorityId, tasks).map(function (st) {
-      return st.name;
-    });
-    return __jsx(react_movable__WEBPACK_IMPORTED_MODULE_15__["List"], {
-      values: items,
-      removableByMove: true,
-      onChange: function onChange(_ref2) {
-        var oldIndex = _ref2.oldIndex,
-            newIndex = _ref2.newIndex;
-
-        if (newIndex === -1) {
-          return Object(_mock_api_models__WEBPACK_IMPORTED_MODULE_14__["removeTaskById"])(sortedTasks[oldIndex].id);
-        }
-
-        Object(_mock_api_models__WEBPACK_IMPORTED_MODULE_14__["moveTaskToRank"])(sortedTasks[oldIndex].id, pickedPriorityId, '' + newIndex);
-      },
-      renderList: function renderList(_ref3) {
-        var children = _ref3.children,
-            props = _ref3.props;
-        return __jsx("ul", Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_6__["default"])({
-          className: "draggable-list"
-        }, props, {
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 212
-          },
-          __self: this
-        }), children);
-      },
-      renderItem: function renderItem(_ref4) {
-        var value = _ref4.value,
-            props = _ref4.props;
-        return __jsx("li", Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_6__["default"])({
-          className: "list-item"
-        }, props, {
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 213
-          },
-          __self: this
-        }), __jsx("div", {
-          className: "list-item-content",
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 214
-          },
-          __self: this
-        }, __jsx("div", {
-          className: "draggable-left",
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 215
-          },
-          __self: this
-        }), __jsx("div", {
-          className: "list-item-name",
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 216
-          },
-          __self: this
-        }, " ", value, " ")));
-      },
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 204
-      },
-      __self: this
-    });
-  };
-
-  return __jsx(_components_MyLayout__WEBPACK_IMPORTED_MODULE_11__["default"], {
+  return __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_6__["default"], {
     onAddPriority: setPickedPriorityId,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 224
+      lineNumber: 27
     },
     __self: this
   }, __jsx("div", {
-    className: "jsx-1854338359" + " " + "main-content",
+    className: "main-content",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 225
+      lineNumber: 28
     },
     __self: this
   }, __jsx("h1", {
-    className: "jsx-1854338359" + " " + "main-title",
+    className: "main-title",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 226
+      lineNumber: 29
     },
     __self: this
-  }, " ", __jsx(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_16__["FontAwesomeIcon"], {
-    icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_17__["faList"],
+  }, " ", __jsx(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_2__["FontAwesomeIcon"], {
+    icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_3__["faList"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 226
+      lineNumber: 29
     },
     __self: this
   }), " Priorities"), __jsx("h2", {
-    className: "jsx-1854338359" + " " + "sub-title",
+    className: "sub-title",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 227
+      lineNumber: 30
     },
     __self: this
-  }, " Pokemon Sword/Shield Themed Task Organizer."), renderPriorityOptions(priorities), renderTestList(tasks)), __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_9___default.a, {
-    id: "1854338359",
+  }, " Pokemon Sword/Shield Themed Task Organizer."), __jsx(_components_PrioritySelect__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    priorities: priorities,
+    pickedPriorityId: pickedPriorityId,
+    setPickedPriorityId: setPickedPriorityId,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 31
+    },
     __self: this
-  }, "h1.jsx-1854338359{font-size:40px;}.main-title.jsx-1854338359{margin-bottom:0;}.sub-title.jsx-1854338359{margin-top:0;font-size:12px;}.main-content.jsx-1854338359{padding-left:20px;width:-webkit-calc(100vw - 40px);}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9qYWNra3dhbi9Qcm9qZWN0cy9wcmlvcml0aWVzL3BhZ2VzL2luZGV4LmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQXVPa0IsQUFFNEIsQUFDVSxBQUNKLEFBRUwsYUFGcUIsRUFGckIsQ0FDVSxFQUlLLFVBSE8sdUJBSXpDIiwiZmlsZSI6Ii9Vc2Vycy9qYWNra3dhbi9Qcm9qZWN0cy9wcmlvcml0aWVzL3BhZ2VzL2luZGV4LmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IExheW91dCBmcm9tICcuLi9jb21wb25lbnRzL015TGF5b3V0JztcbmltcG9ydCBMaW5rIGZyb20gJ25leHQvbGluayc7XG5pbXBvcnQgeyB1c2VUYXNrcywgdXNlUHJpb3JpdGllcyB9IGZyb20gJy4uL2hvb2tzL2N1c3RvbUhvb2tzJztcblxuaW1wb3J0IHsgbW92ZVRhc2tUb1JhbmssIHJlbW92ZVRhc2tCeUlkLCByZW1vdmVQcmlvcml0eUJ5SWQgfSBmcm9tICcuLi9tb2NrX2FwaS9tb2RlbHMnXG5pbXBvcnQgeyB1c2VTdGF0ZSB9IGZyb20gJ3JlYWN0JztcblxuaW1wb3J0IHsgTGlzdCwgYXJyYXlNb3ZlIH0gZnJvbSAncmVhY3QtbW92YWJsZSc7XG5cbmltcG9ydCB7IEZvbnRBd2Vzb21lSWNvbiB9IGZyb20gJ0Bmb3J0YXdlc29tZS9yZWFjdC1mb250YXdlc29tZSc7XG5pbXBvcnQgeyBmYUxpc3QsIGZhVHJhc2ggfSBmcm9tICdAZm9ydGF3ZXNvbWUvZnJlZS1zb2xpZC1zdmctaWNvbnMnO1xuXG5pbXBvcnQgU2VsZWN0IGZyb20gJ3JlYWN0LXNlbGVjdCc7XG5cbmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIEhvbWUoKSB7XG5cbiAgbGV0IHRhc2tzID0gdXNlVGFza3MoKTsgLy8gZXhpc3RpbmcgaG9va1xuICBsZXQgcHJpb3JpdGllcyA9IHVzZVByaW9yaXRpZXMoKSB8fCBbXTtcblxuICBsZXQgW3BpY2tlZFByaW9yaXR5SWQsIHNldFBpY2tlZFByaW9yaXR5SWRdID0gdXNlU3RhdGUoJzAnKTtcblxuICBsZXQgc2VsZWN0U3R5bGUgPSA8c3R5bGUganN4PVwidHJ1ZVwiPntgXG4gICAgLnNlbGVjdC13cmFwcGVyIHtcbiAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICBmbGV4LWRpcmVjdGlvbjogcm93O1xuICAgICAgd2lkdGg6IDEwMHZ3O1xuICAgICAgaGVpZ2h0OiAxMDBweDtcbiAgICAgIHJpZ2h0OiAwO1xuICAgICAgdG9wOiA4MHB4O1xuICAgICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICB9XG5cbiAgICAuc2VsZWN0IHtcbiAgICAgIGZsZXg6IDFcbiAgICB9XG5cbiAgICAuc2VsZWN0LWxhYmVsIHtcbiAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICBoZWlnaHQ6IDU0cHg7XG4gICAgICB3aWR0aDogMTAwcHg7XG4gICAgICBwYWRkaW5nOiAwcHg7XG4gICAgICBtYXJnaW46IDBweDtcbiAgICAgIGJhY2tncm91bmQtY29sb3I6ICM2ZDY5NWY7XG4gICAgICBmb250LXNpemU6IDIwcHg7XG4gICAgICBmb250LXdlaWdodDogNzAwO1xuICAgICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgIH1cblxuICAgIC5yZW1vdmUtcHJpb3JpdHk6aG92ZXIge1xuICAgICAgY29sb3I6IHJlZDtcbiAgICB9XG5cbiAgICAub3B0aW9uLWNvbnRhaW5lciB7XG4gICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgd2lkdGg6IDEwMCU7XG4gICAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XG4gICAgfVxuXG4gICAgLnJlYWN0LXNlbGVjdF9fc2luZ2xlLXZhbHVlIC5wcmlvcml0eS1vcHRpb24ge1xuICAgICAgdmlzaWJpbGl0eTogaGlkZGVuO1xuICAgIH1cblxuICBgfTwvc3R5bGU+O1xuXG5cbiAgbGV0IGN1c3RvbVN0eWxlcyA9IHsgICAgICBcbiAgICBjb250cm9sOiAoYmFzZSwgc3RhdGUpID0+ICh7XG4gICAgICAuLi5iYXNlLFxuICAgICAgYmFja2dyb3VuZDogXCIjZjBiYjM5XCIsXG4gICAgICBib3JkZXI6IHN0YXRlLmlzRm9jdXNlZCA/IDAgOiAwLFxuICAgICAgLy8gVGhpcyBsaW5lIGRpc2FibGUgdGhlIGJsdWUgYm9yZGVyXG4gICAgICBib3hTaGFkb3c6IHN0YXRlLmlzRm9jdXNlZCA/IDAgOiAwLFxuICAgICAgJyY6aG92ZXInOiB7IGJvcmRlcjogc3RhdGUuaXNGb2N1c2VkID8gMCA6IDAgfSxcbiAgICAgIGhlaWdodDogJzU0cHgnLFxuICAgICAgJ21pbkhlaWdodCc6ICc1NHB4JyxcbiAgICAgICdib3JkZXJSYWRpdXMnOiAnMHB4JyxcbiAgICAgIGZvbnRGYW1pbHk6IFwiQXJpYWxcIixcbiAgICAgIGZvbnRTaXplOiAnMjBweCcsXG4gICAgICAnZm9udFdlaWdodCc6IDcwMCxcbiAgICAgIGZsZXg6IDEsXG4gICAgfSksXG4gICAgc2luZ2xlVmFsdWU6IChwcm92aWRlZCwgc3RhdGUpID0+IHtcbiAgICAgIHJldHVybiB7IC4uLnByb3ZpZGVkLCBmb250V2VpZ2h0OiA5MDAsIGNvbG9yOiAnYmxhY2snIH07XG4gICAgfVxuICB9O1xuXG4gIGNvbnN0IGZvcm1hdE9wdGlvbkxhYmVsID0gKHsgdmFsdWUsIGxhYmVsLCBjdXN0b21BYmJyZXZpYXRpb24gfSkgPT4gKFxuICAgIDxkaXYgY2xhc3NOYW1lPVwib3B0aW9uLWNvbnRhaW5lclwiPlxuICAgICAgPGRpdj57bGFiZWx9PC9kaXY+XG4gICAgICA8ZGl2IGNsYXNzTmFtZT1cInByaW9yaXR5LW9wdGlvblwiPlxuICAgICAgICB7Y3VzdG9tQWJicmV2aWF0aW9ufSBcbiAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJyZW1vdmUtcHJpb3JpdHlcIiBvbkNsaWNrPXsoKGUpID0+IHtcbiAgICAgICAgICBlLnN0b3BQcm9wYWdhdGlvbigpO1xuICAgICAgICAgIGxldCBuZXdQcmlvcml0aWVzID0gcmVtb3ZlUHJpb3JpdHlCeUlkKHZhbHVlKTtcbiAgICAgICAgICBpZiAobmV3UHJpb3JpdGllcy5sZW5ndGggPT09IDApIHsgcmV0dXJuIHNldFBpY2tlZFByaW9yaXR5SWQobnVsbCk7IH1cbiAgICAgICAgICBpZiAobmV3UHJpb3JpdGllcy5maW5kSW5kZXgocCA9PiBwLmlkID09PSBwaWNrZWRQcmlvcml0eUlkKSA9PT0gLTEpIHsgc2V0UGlja2VkUHJpb3JpdHlJZChuZXdQcmlvcml0aWVzWzBdLmlkKTsgfVxuICAgICAgICB9KX0+IDxGb250QXdlc29tZUljb24gaWNvbj17ZmFUcmFzaH0gLz4gPC9kaXY+XG4gICAgICA8L2Rpdj5cbiAgICA8L2Rpdj5cbiAgKTtcblxuICBsZXQgcmVuZGVyUHJpb3JpdHlPcHRpb25zID0gKHByaW9yaXRpZXMpID0+IHtcbiAgICBsZXQgb3B0aW9ucyA9IFtdO1xuICAgIGZvciAobGV0IHByaW9yaXR5IG9mIHByaW9yaXRpZXMpIHsgb3B0aW9ucy5wdXNoKHsgdmFsdWU6IHByaW9yaXR5LmlkLCAgbGFiZWw6IHByaW9yaXR5Lm5hbWUgfSkgfVxuICAgIGxldCBwaWNrZWQgPSBvcHRpb25zLmZpbmQob3B0aW9uID0+IG9wdGlvbi52YWx1ZSA9PT0gcGlja2VkUHJpb3JpdHlJZCkgfHwgbnVsbDtcbiAgICByZXR1cm4gPGRpdiBjbGFzc05hbWU9XCJzZWxlY3Qtd3JhcHBlclwiPlxuICAgICAgPGRpdiBjbGFzc05hbWU9XCJzZWxlY3QtbGFiZWxcIj4gU29ydCBieTogPC9kaXY+XG4gICAgICA8U2VsZWN0IGNsYXNzTmFtZT1cInNlbGVjdFwiIGluc3RhbmNlSWQ9XCJzZWxlY3RQcmlvcml0eVwiIGNsYXNzTmFtZVByZWZpeD1cInJlYWN0LXNlbGVjdFwiXG4gICAgICAgIHZhbHVlPXtwaWNrZWR9XG4gICAgICAgIG9uQ2hhbmdlPXsoc2VsZWN0ZWQpID0+IHNldFBpY2tlZFByaW9yaXR5SWQoc2VsZWN0ZWQudmFsdWUpfVxuICAgICAgICBmb3JtYXRPcHRpb25MYWJlbD17Zm9ybWF0T3B0aW9uTGFiZWx9XG4gICAgICAgIG9wdGlvbnM9e29wdGlvbnN9XG4gICAgICAgIGNvbXBvbmVudHM9e3sgSW5kaWNhdG9yU2VwYXJhdG9yOiAoKSA9PiBudWxsIH19XG4gICAgICAgIHN0eWxlcz17Y3VzdG9tU3R5bGVzfVxuICAgICAgLz5cbiAgICAgIHtzZWxlY3RTdHlsZX1cbiAgICA8L2Rpdj47XG4gIH07XG5cblxuICBsZXQgc29ydFRhc2tzVXNpbmdQcmlvcml0eSA9IChwaWNrZWRQcmlvcml0eUlkLCB0YXNrcykgPT4ge1xuICAgIGlmICghcGlja2VkUHJpb3JpdHlJZCkgeyByZXR1cm4gW107IH1cbiAgICBpZiAocHJpb3JpdGllcy5sZW5ndGggPT09IDApIHsgcmV0dXJuIFtdOyB9XG5cbiAgICBsZXQgcmVzdWx0ID0gW107XG4gICAgbGV0IHByaW9yaXR5ID0gcHJpb3JpdGllcy5maW5kKHByaW9yaXR5ID0+IHByaW9yaXR5LmlkID09PSBwaWNrZWRQcmlvcml0eUlkKTtcbiAgICBpZiAoIXByaW9yaXR5ICkgeyByZXR1cm4gW107IH1cbiAgICBmb3IgKGxldCBpID0gMDsgaSA8IHByaW9yaXR5LnJhbmtpbmcubGVuZ3RoOyBpKyspIHtcbiAgICAgIGxldCByYW5raW5nID0gcHJpb3JpdHkucmFua2luZ1tpXTtcbiAgICAgIGxldCB0YXNrID0gdGFza3MuZmluZCh0YXNrID0+IHRhc2suaWQgPT09IHJhbmtpbmcpO1xuICAgICAgcmVzdWx0LnB1c2godGFzayk7XG4gICAgfTtcbiAgXG4gICAgcmVzdWx0ID0gcmVzdWx0LmZpbHRlcihpdGVtID0+IGl0ZW0gIT09IHVuZGVmaW5lZCk7IFxuICAgIHJldHVybiByZXN1bHQ7XG4gIH07XG5cbiAgbGV0IHNvcnRlZFRhc2tzID0gc29ydFRhc2tzVXNpbmdQcmlvcml0eShwaWNrZWRQcmlvcml0eUlkLCB0YXNrcyk7XG5cbiAgbGV0IHRyaWdnZXJNb3ZlbWVudCA9ICgpID0+IHtcbiAgICBsZXQgbGFzdFRhc2sgPSBzb3J0ZWRUYXNrc1t0YXNrcy5sZW5ndGgtMV07XG4gICAgbW92ZVRhc2tUb1JhbmsobGFzdFRhc2suaWQsIHBpY2tlZFByaW9yaXR5SWQsIDEpO1xuICB9XG5cbiAgbGV0IGxpc3RTdHlsZSA9IDxzdHlsZSBqc3g9XCJ0cnVlXCI+e2BcbiAgICAuZHJhZ2dhYmxlLWxpc3Qge1xuICAgICAgbWFyZ2luLXRvcDogODBweDtcbiAgICAgIG92ZXJmbG93OiBhdXRvO1xuICAgICAgbWF4LWhlaWdodDogLXdlYmtpdC1jYWxjKDEwMHZoIC0gMTgwcHgpO1xuICAgICAgLXdlYmtpdC1tYXNrLWltYWdlOiAtd2Via2l0LWdyYWRpZW50KGxpbmVhciwgbGVmdCBjZW50ZXIsIGxlZnQgYm90dG9tLCBmcm9tKHJnYmEoMCwwLDAsMSkpLCB0byhyZ2JhKDAsMCwwLDApKSk7XG4gICAgfVxuXG4gICAgLmRyYWdnYWJsZS1sZWZ0IHtcbiAgICAgIGJhY2tncm91bmQ6IGxpZ2h0Z3JleTtcbiAgICAgIHdpZHRoOiAzMHB4O1xuICAgICAgcGFkZGluZzogMHB4O1xuICAgICAgbWFyZ2luOiAwcHg7XG4gICAgICBoZWlnaHQ6IDEwMCU7XG4gICAgfVxuXG4gICAgLmxpc3QtaXRlbS1jb250ZW50IHtcbiAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICBmbGV4LWRpcmVjdGlvbjogcm93O1xuICAgICAgaGVpZ2h0OiA0MHB4O1xuICAgICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICAgIGZvbnQtd2VpZ2h0OiA3MDA7XG4gICAgfVxuXG4gICAgdWwge1xuICAgICAgcGFkZGluZzogMHB4O1xuICAgIH1cblxuICAgIGxpOmhvdmVyIHtcbiAgICAgIGN1cnNvcjogbW92ZTsgLyogZmFsbGJhY2sgaWYgZ3JhYiBjdXJzb3IgaXMgdW5zdXBwb3J0ZWQgKi9cbiAgICAgIGN1cnNvcjogZ3JhYjtcbiAgICB9XG5cbiAgICBsaSB7XG4gICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgbWFyZ2luOiAxMHB4IDBweDtcbiAgICAgIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xuICAgICAgbGlzdC1zdHlsZS10eXBlOiBub25lO1xuICAgICAgZm9udC1zaXplOiAyMHB4O1xuICAgICAgaGVpZ2h0OiA0MHB4O1xuICAgICAgbWluLXdpZHRoOiAxMDAlO1xuICAgICAgbWF4LXdpZHRoOiA5MHZ3O1xuICAgICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgICAgIGZsZXgtZGlyZWN0aW9uOiByb3c7XG4gICAgfVxuXG4gICAgLmxpc3QtaXRlbS1uYW1lIHtcbiAgICAgIHRleHQtYWxpZ246IGxlZnQ7XG4gICAgICBwYWRkaW5nLWxlZnQ6IDEwcHg7XG4gICAgICBmbGV4OiAxO1xuICAgIH1cbiAgYH08L3N0eWxlPjtcblxuICBsZXQgcmVuZGVyVGVzdExpc3QgPSAodGFza3MpID0+IHtcbiAgICBsZXQgaXRlbXMgPSBzb3J0VGFza3NVc2luZ1ByaW9yaXR5KHBpY2tlZFByaW9yaXR5SWQsIHRhc2tzKS5tYXAoc3QgPT4gc3QubmFtZSk7XG4gICAgcmV0dXJuIChcbiAgICAgIDxMaXN0IFxuICAgICAgICB2YWx1ZXM9e2l0ZW1zfVxuICAgICAgICByZW1vdmFibGVCeU1vdmU9e3RydWV9XG4gICAgICAgIG9uQ2hhbmdlPXsoeyBvbGRJbmRleCwgbmV3SW5kZXggfSkgPT4ge1xuICAgICAgICAgICAgaWYgKG5ld0luZGV4ID09PSAtMSkgeyByZXR1cm4gcmVtb3ZlVGFza0J5SWQoc29ydGVkVGFza3Nbb2xkSW5kZXhdLmlkKTsgfVxuICAgICAgICAgICAgbW92ZVRhc2tUb1Jhbmsoc29ydGVkVGFza3Nbb2xkSW5kZXhdLmlkLCBwaWNrZWRQcmlvcml0eUlkLCAnJytuZXdJbmRleCk7XG4gICAgICAgICAgfVxuICAgICAgICB9XG4gICAgICAgIHJlbmRlckxpc3Q9eyh7IGNoaWxkcmVuLCBwcm9wcyB9KSA9PiA8dWwgY2xhc3NOYW1lPVwiZHJhZ2dhYmxlLWxpc3RcIiB7Li4ucHJvcHN9PntjaGlsZHJlbn08L3VsPn1cbiAgICAgICAgcmVuZGVySXRlbT17KHsgdmFsdWUsIHByb3BzIH0pID0+IDxsaSBjbGFzc05hbWU9XCJsaXN0LWl0ZW1cIiB7Li4ucHJvcHN9PlxuICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwibGlzdC1pdGVtLWNvbnRlbnRcIj5cbiAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiZHJhZ2dhYmxlLWxlZnRcIj48L2Rpdj5cbiAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwibGlzdC1pdGVtLW5hbWVcIj4ge3ZhbHVlfSA8L2Rpdj5cbiAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgPC9saT59PlxuICAgICAgPC9MaXN0PlxuICAgICk7XG4gIH1cblxuICByZXR1cm4gKFxuICAgIDxMYXlvdXQgb25BZGRQcmlvcml0eT17c2V0UGlja2VkUHJpb3JpdHlJZH0+XG4gICAgICA8ZGl2IGNsYXNzTmFtZT1cIm1haW4tY29udGVudFwiPlxuICAgICAgICA8aDEgY2xhc3NOYW1lPVwibWFpbi10aXRsZVwiPiA8Rm9udEF3ZXNvbWVJY29uIGljb249e2ZhTGlzdH0gLz4gUHJpb3JpdGllczwvaDE+XG4gICAgICAgIDxoMiBjbGFzc05hbWU9XCJzdWItdGl0bGVcIj4gUG9rZW1vbiBTd29yZC9TaGllbGQgVGhlbWVkIFRhc2sgT3JnYW5pemVyLjwvaDI+XG4gICAgICAgIHsgcmVuZGVyUHJpb3JpdHlPcHRpb25zKHByaW9yaXRpZXMpIH0gXG4gICAgICAgIHsgcmVuZGVyVGVzdExpc3QodGFza3MpIH1cbiAgICAgIDwvZGl2PlxuXG4gICAgICA8c3R5bGUganN4PntgXG4gICAgICAgIGgxIHsgZm9udC1zaXplOiA0MHB4OyB9XG4gICAgICAgIC5tYWluLXRpdGxlIHsgbWFyZ2luLWJvdHRvbTogMDsgfVxuICAgICAgICAuc3ViLXRpdGxlIHsgbWFyZ2luLXRvcDogMDsgZm9udC1zaXplOiAxMnB4OyB9XG4gICAgICAgIC5tYWluLWNvbnRlbnQge1xuICAgICAgICAgIHBhZGRpbmctbGVmdDogMjBweDtcbiAgICAgICAgICB3aWR0aDogLXdlYmtpdC1jYWxjKDEwMHZ3IC0gNDBweCk7XG4gICAgICAgICB9XG4gICAgICBgfTwvc3R5bGU+XG4gICAgICB7bGlzdFN0eWxlfVxuICAgIDwvTGF5b3V0PlxuICApO1xufSJdfQ== */\n/*@ sourceURL=/Users/jackkwan/Projects/priorities/pages/index.js */"), listStyle);
+  }), __jsx(_components_TaskList__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    tasks: tasks,
+    priorities: priorities,
+    pickedPriorityId: pickedPriorityId,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 35
+    },
+    __self: this
+  })), homeStyle);
 }
 
 /***/ }),
